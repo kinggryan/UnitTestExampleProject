@@ -12,7 +12,16 @@
 		576B266A1A812F2B00DE3AFD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 576B26681A812F2B00DE3AFD /* Main.storyboard */; };
 		576B266C1A812F2B00DE3AFD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 576B266B1A812F2B00DE3AFD /* Images.xcassets */; };
 		576B266F1A812F2B00DE3AFD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 576B266D1A812F2B00DE3AFD /* LaunchScreen.xib */; };
-		576B267B1A812F2B00DE3AFD /* UnitTestsCardExampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B267A1A812F2B00DE3AFD /* UnitTestsCardExampleTests.swift */; };
+		576B26861A81303F00DE3AFD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B26851A81303F00DE3AFD /* Card.swift */; };
+		576B26881A81315D00DE3AFD /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B26871A81315D00DE3AFD /* PlayingCard.swift */; };
+		576B268A1A81341900DE3AFD /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B26891A81341900DE3AFD /* Deck.swift */; };
+		576B268C1A81361000DE3AFD /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B268B1A81361000DE3AFD /* PlayingCardDeck.swift */; };
+		576B268E1A813E1800DE3AFD /* CardTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B268D1A813E1800DE3AFD /* CardTestCase.swift */; };
+		576B268F1A81405900DE3AFD /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B26851A81303F00DE3AFD /* Card.swift */; };
+		576B26901A81405900DE3AFD /* PlayingCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B26871A81315D00DE3AFD /* PlayingCard.swift */; };
+		576B26911A81405900DE3AFD /* Deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B26891A81341900DE3AFD /* Deck.swift */; };
+		576B26921A81405900DE3AFD /* PlayingCardDeck.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B268B1A81361000DE3AFD /* PlayingCardDeck.swift */; };
+		576B26941A81456A00DE3AFD /* PlayingCardTestCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 576B26931A81456A00DE3AFD /* PlayingCardTestCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,7 +44,12 @@
 		576B266E1A812F2B00DE3AFD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		576B26741A812F2B00DE3AFD /* UnitTestsCardExampleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTestsCardExampleTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		576B26791A812F2B00DE3AFD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		576B267A1A812F2B00DE3AFD /* UnitTestsCardExampleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTestsCardExampleTests.swift; sourceTree = "<group>"; };
+		576B26851A81303F00DE3AFD /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		576B26871A81315D00DE3AFD /* PlayingCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingCard.swift; sourceTree = "<group>"; };
+		576B26891A81341900DE3AFD /* Deck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Deck.swift; sourceTree = "<group>"; };
+		576B268B1A81361000DE3AFD /* PlayingCardDeck.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingCardDeck.swift; sourceTree = "<group>"; };
+		576B268D1A813E1800DE3AFD /* CardTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardTestCase.swift; sourceTree = "<group>"; };
+		576B26931A81456A00DE3AFD /* PlayingCardTestCase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayingCardTestCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +91,7 @@
 		576B26611A812F2B00DE3AFD /* UnitTestsCardExample */ = {
 			isa = PBXGroup;
 			children = (
+				576B26841A812FEF00DE3AFD /* Models */,
 				576B26641A812F2B00DE3AFD /* AppDelegate.swift */,
 				576B26661A812F2B00DE3AFD /* ViewController.swift */,
 				576B26681A812F2B00DE3AFD /* Main.storyboard */,
@@ -98,7 +113,8 @@
 		576B26771A812F2B00DE3AFD /* UnitTestsCardExampleTests */ = {
 			isa = PBXGroup;
 			children = (
-				576B267A1A812F2B00DE3AFD /* UnitTestsCardExampleTests.swift */,
+				576B268D1A813E1800DE3AFD /* CardTestCase.swift */,
+				576B26931A81456A00DE3AFD /* PlayingCardTestCase.swift */,
 				576B26781A812F2B00DE3AFD /* Supporting Files */,
 			);
 			path = UnitTestsCardExampleTests;
@@ -110,6 +126,17 @@
 				576B26791A812F2B00DE3AFD /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		576B26841A812FEF00DE3AFD /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				576B26851A81303F00DE3AFD /* Card.swift */,
+				576B26871A81315D00DE3AFD /* PlayingCard.swift */,
+				576B26891A81341900DE3AFD /* Deck.swift */,
+				576B268B1A81361000DE3AFD /* PlayingCardDeck.swift */,
+			);
+			name = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,6 +240,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				576B26671A812F2B00DE3AFD /* ViewController.swift in Sources */,
+				576B26861A81303F00DE3AFD /* Card.swift in Sources */,
+				576B268A1A81341900DE3AFD /* Deck.swift in Sources */,
+				576B268C1A81361000DE3AFD /* PlayingCardDeck.swift in Sources */,
+				576B26881A81315D00DE3AFD /* PlayingCard.swift in Sources */,
 				576B26651A812F2B00DE3AFD /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -221,7 +252,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				576B267B1A812F2B00DE3AFD /* UnitTestsCardExampleTests.swift in Sources */,
+				576B268F1A81405900DE3AFD /* Card.swift in Sources */,
+				576B26901A81405900DE3AFD /* PlayingCard.swift in Sources */,
+				576B26941A81456A00DE3AFD /* PlayingCardTestCase.swift in Sources */,
+				576B26911A81405900DE3AFD /* Deck.swift in Sources */,
+				576B26921A81405900DE3AFD /* PlayingCardDeck.swift in Sources */,
+				576B268E1A813E1800DE3AFD /* CardTestCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -407,6 +443,7 @@
 				576B26801A812F2B00DE3AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		576B26811A812F2B00DE3AFD /* Build configuration list for PBXNativeTarget "UnitTestsCardExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -415,6 +452,7 @@
 				576B26831A812F2B00DE3AFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
